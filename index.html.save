@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriScan Rover - Smart Crop Health Monitor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background: #0a0a0a;
+      color: #e5e5e5;
+    }
+    .hero-bg {
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+                  url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449') center/cover;
+    }
+    .card {
+      background: #111111;
+      border: 1px solid #222222;
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-black border-b border-gray-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold flex items-center gap-2">
+        <span class="text-green-500">🌱</span> AgriScan
+      </h1>
+      <div class="space-x-8 text-lg">
+        <a href="#home" class="hover:text-green-400 transition">Home</a>
+        <a href="#about" class="hover:text-green-400 transition">Project</a>
+        <a href="#survey" class="hover:text-green-400 transition">Survey</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-bg text-white py-32">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Smart Rover for<br>Crop Health Checking</h2>
+      <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto text-gray-300">Autonomous AI-powered car that scans crops, detects diseases & helps farmers</p>
+      <a href="#survey" class="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold px-10 py-5 rounded-full text-xl transition">
+        Take Survey Now →
+      </a>
+    </div>
+  </section>
+
+  <!-- Project Brief -->
+  <section id="about" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-400">Our Innovation</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-lg text-gray-300 leading-relaxed">
+            AgriScan Rover is an AI-powered robotic vehicle that moves through fields and checks crop health in real-time using cameras and sensors.
+          </p>
+          <div class="mt-8 grid grid-cols-2 gap-6">
+            <div class="text-center p-6 card rounded-3xl">
+              <div class="text-4xl mb-3">📸</div>
+              <p class="font-medium text-green-400">Crop Scanning</p>
+            </div>
+            <div class="text-center p-6 card rounded-3xl">
+              <div class="text-4xl mb-3">🦠</div>
+              <p class="font-medium text-green-400">Disease Detection</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-10 rounded-3xl text-center border border-green-900">
+          <div class="text-8xl mb-6">🚗🌾</div>
+          <p class="text-2xl font-medium text-green-400">Autonomous Crop Monitoring Rover</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Survey Section -->
+  <section id="survey" class="py-20 bg-black">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-3 text-green-400">Farmer Feedback Survey</h2>
+      <p class="text-center text-gray-400 mb-12">Your opinion matters!</p>
+
+      <form id="surveyForm" class="card rounded-3xl p-10 md:p-12">
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-sm font-medium mb-2 text-gray-400">Your Name</label>
+            <input type="text" class="w-full p-4 bg-zinc-900 border border-gray-700 rounded-2xl focus:outline-none focus:border-green-500 text-white" required>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2 text-gray-400">Village / City</label>
+            <input type="text" class="w-full p-4 bg-zinc-900 border border-gray-700 rounded-2xl focus:outline-none focus:border-green-500 text-white" required>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <label class="block text-sm font-medium mb-3 text-gray-400">Main crops you grow?</label>
+          <input type="text" class="w-full p-4 bg-zinc-900 border border-gray-700 rounded-2xl focus:outline-none focus:border-green-500 text-white" placeholder="Wheat, Rice, Sugarcane, Cotton..." required>
+        </div>
+
+        <!-- Buy Poll -->
+        <div class="mt-10 p-8 bg-zinc-900 rounded-3xl border border-green-900">
+          <label class="block text-xl font-semibold mb-6 text-center text-green-400">
+            Would you buy AgriScan Rover if it is available?
+          </label>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <label class="flex-1 cursor-pointer">
+              <input type="radio" name="buy" value="Yes" class="peer hidden" required>
+              <div class="peer-checked:bg-green-600 peer-checked:text-white bg-zinc-800 border-2 border-green-600 text-green-400 font-semibold py-5 rounded-2xl text-center text-xl transition">
+                Yes, I would buy
+              </div>
+            </label>
+            <label class="flex-1 cursor-pointer">
+              <input type="radio" name="buy" value="Maybe" class="peer hidden">
+              <div class="peer-checked:bg-amber-500 peer-checked:text-white bg-zinc-800 border-2 border-amber-500 text-amber-400 font-semibold py-5 rounded-2xl text-center text-xl transition">
+                Maybe
+              </div>
+            </label>
+            <label class="flex-1 cursor-pointer">
+              <input type="radio" name="buy" value="No" class="peer hidden">
+              <div class="peer-checked:bg-red-600 peer-checked:text-white bg-zinc-800 border-2 border-red-600 text-red-400 font-semibold py-5 rounded-2xl text-center text-xl transition">
+                No
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <label class="block text-sm font-medium mb-2 text-gray-400">Any suggestions or problems you face?</label>
+          <textarea class="w-full p-4 bg-zinc-900 border border-gray-700 rounded-3xl h-32 focus:outline-none focus:border-green-500 text-white" placeholder="Write here..."></textarea>
+        </div>
+
+        <button type="submit" 
+                class="mt-12 w-full bg-green-600 hover:bg-green-500 text-white font-bold py-6 rounded-3xl text-xl transition">
+          Submit My Response
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black border-t border-gray-800 text-center py-12">
+    <p class="text-xl">Thank you for supporting AgriScan Rover Project</p>
+    <p class="mt-3 text-gray-500">Made for better Indian Agriculture • Punjab</p>
+    <script>
+    document.getElementById('surveyForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('✅ Thank you! Your response has been recorded.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
